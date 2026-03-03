@@ -1,0 +1,17 @@
+//
+//  Licenses.txt
+//  ssc26 Bel
+//
+//  Created by Isabel Cristina Marras Salles on 27/02/26.
+//
+
+Media License Documentation
+
+All audio assets used in this project were obtained from Pixabay and are licensed under Creative Commons CC0.
+CC0 allows free use, modification, and distribution without attribution.
+Assets:
+    - Lo-Fi Music Loop – Sentimental Jazzy Love - https://pixabay.com/music/lofi-lo-fi-music-loop-sentimental-jazzy-love-473154/
+    - Rainy Day – Film Special Effects - https://pixabay.com/sound-effects/film-special-effects-012057-rainy-day-58679/
+    - Nature – Spring Forest - https://pixabay.com/sound-effects/nature-spring-forest-nature-332842/
+
+No other third-party media is included in this project.
