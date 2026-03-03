@@ -22,38 +22,14 @@
 
 ## 📸 Interface
 
-| Reading Focus | Note Summarization | Library Tracking |
+| Reading Focus | Note Sum![Uploading screenshot1.png…]()
+marization | Library Tracking |
 | :--- | :--- | :--- |
-| ![Focus Mode](https://via.placeholder.com/200x400) | ![AI Summary](https://via.placeholder.com/200x400) | ![SwiftData Library](https://via.placeholder.com/200x400) |
-
-## 🚀 Getting Started
-
-### Prerequisites
-* Xcode 15.0 or later
-* iOS 17.0+ / macOS 14.0+
-
-### Installation
-1.  Clone the repository:
-    ```bash
-    git clone [https://github.com/yourusername/Pharos.git](https://github.com/yourusername/Pharos.git)
-    ```
-2.  Open `Pharos.xcodeproj` in Xcode.
-3.  Ensure your development team is selected in **Signing & Capabilities**.
-4.  Build and Run (**Cmd + R**).
-
-## 🏗 Architecture
-
-The project follows a modern, reactive architecture:
+| ![Focus Mode](<img width="590" height="1278" alt="screenshot2" src="https://github.com/user-attachments/assets/adbf385d-0b4f-4fe1-9631-e366b2ee53e8" />) | ![AI Summary](https://via.placeholder.com/200x400) | ![SwiftData Library](https://via.placehol
+der.com/200x400) |
 
 
 
-* **Views:** Pure SwiftUI for a fluid, native experience.
-* **Data:** **SwiftData** `@Model` containers for seamless persistence and schema migrations.
-* **Logic:** Decoupled services for Audio handling and AI inference to ensure the UI remains responsive.
-
-## ⚖️ License
-
-Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
 *Developed with ❤️ as part of a deep reading exploration.*
