@@ -19,17 +19,3 @@
 * **Data Management:** SwiftData
 * **Audio Engine:** AVFoundation
 * **Intelligence:** Foundation Models (On-device processing)
-
-## 📸 Interface
-
-| Reading Focus | Note Sum![Uploading screenshot1.png…]()
-marization | Library Tracking |
-| :--- | :--- | :--- |
-| ![Focus Mode](<img width="590" height="1278" alt="screenshot2" src="https://github.com/user-attachments/assets/adbf385d-0b4f-4fe1-9631-e366b2ee53e8" />) | ![AI Summary](https://via.placeholder.com/200x400) | ![SwiftData Library](https://via.placehol
-der.com/200x400) |
-
-
-
-
----
-*Developed with ❤️ as part of a deep reading exploration.*
