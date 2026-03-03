@@ -6,7 +6,7 @@
 
 ## 🌟 Features
 
-* **Immersive Audio Sessions:** Integrated background atmospheres (rain, library, white noise) using **AVFoundation** to foster a state of flow.
+* **Immersive Audio Sessions:** Integrated background atmospheres (rain, nature, lofi) using **AVFoundation** to foster a state of flow.
 * **Active Note-Taking:** Capture thoughts in real-time during sessions or reflect on your progress afterward.
 * **AI Summarization:** Leverage **Foundation Models** to automatically generate concise summaries of your reading notes.
 * **Smart Auto-Titling:** Pharos analyzes your notes to suggest contextually relevant titles automatically using AI.
