@@ -20,7 +20,7 @@ struct BookshelfView: View {
     @State private var bookToDelete: Book? = nil
     
     @State private var newBookModalisPresented : Bool = false
-    @Query private var books: [Book]
+    @Query(sort: \Book.creationDate, order: .reverse) private var books: [Book]
     
     @State private var bookToEdit: Book? = nil
     

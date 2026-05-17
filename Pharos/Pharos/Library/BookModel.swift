@@ -15,6 +15,7 @@ class Book {
     public var numberOfPages: Int?
     public var coverColor: String
     public var currentPage: Int
+    public var creationDate: Date
     
 
     @Relationship(deleteRule: .cascade, inverse: \Session.book) var sessions: [Session]
@@ -29,6 +30,7 @@ class Book {
         self.notes = []
         self.coverColor = coverColor
         self.currentPage = currentPage
+        self.creationDate = Date()
     }
     
     
