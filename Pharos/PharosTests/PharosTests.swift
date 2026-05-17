@@ -1,0 +1,17 @@
+//
+//  PharosTests.swift
+//  PharosTests
+//
+//  Created by Isabel Cristina Marras Salles on 17/05/26.
+//
+
+import Testing
+@testable import Pharos
+
+struct PharosTests {
+
+    @Test func example() async throws {
+        // Write your test here and use APIs like `#expect(...)` to check expected conditions.
+    }
+
+}
