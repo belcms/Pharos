@@ -29,9 +29,35 @@
 		468A5C9B2FBA6BBC006310AF /* PharosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PharosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		468A5CCA2FBA6D40006310AF /* Exceptions for "Pharos" folder in "Pharos" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Licenses.txt,
+				Research.txt,
+			);
+			target = 468A5C832FBA6BBC006310AF /* Pharos */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		468A5CCB2FBA6D40006310AF /* Exceptions for "Pharos" folder in "Compile Sources" phase from "Pharos" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = 468A5C802FBA6BBC006310AF /* Sources */;
+			membershipExceptions = (
+				Licenses.txt,
+				Research.txt,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		468A5C862FBA6BBC006310AF /* Pharos */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				468A5CCA2FBA6D40006310AF /* Exceptions for "Pharos" folder in "Pharos" target */,
+				468A5CCB2FBA6D40006310AF /* Exceptions for "Pharos" folder in "Compile Sources" phase from "Pharos" target */,
+			);
 			path = Pharos;
 			sourceTree = "<group>";
 		};
