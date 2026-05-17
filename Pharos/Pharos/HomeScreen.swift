@@ -62,8 +62,6 @@ struct HomeScreen: View {
                         if allBooks.isEmpty {
                             NoBookReadView()
                         } else {
-                            
-
                             if let lastBook = lastReadBook {
                                 LastBookCard(book: lastBook, path: $path)
                                 

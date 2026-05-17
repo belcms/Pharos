@@ -14,7 +14,7 @@ struct BookProgressBar: View {
     
     private var progress: Double {
         guard totalPages > 0 else { return 0 }
-        return Double(currentPage) / Double(totalPages)
+        return min((Double(currentPage) / Double(totalPages)), 1)
     }
     
     private var percentageString: String {
@@ -41,7 +41,7 @@ struct BookProgressBar: View {
             .frame(height: 8) 
             
             HStack {
-                Text("\(currentPage)/\(totalPages) pages")
+                Text("\(currentPage <= totalPages ? currentPage : totalPages)/\(totalPages) pages")
                 Spacer()
                 Text(percentageString)
                     .font(.caption2.bold())
