@@ -1,0 +1,55 @@
+# Arquivos de sistema do macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# Xcode - Build e derivados
+build/
+DerivedData/
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Xcode - Configurações de usuário (IMPORTANTE: não comitar isso)
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+*.xccheckout
+*.xcscmblueprint
+*.moved-aside
+
+# Playgrounds do Xcode
+timeline.xctimeline
+playground.xcworkspace
+
+# Swift Package Manager (SPM)
+.build/
+# Descomente as linhas abaixo se quiser ignorar os pacotes baixados
+# Packages/
+# Package.pins
+# Package.resolved
+# .swiftpm/xcode/
+
+# CocoaPods
+# Descomente as linhas abaixo caso use CocoaPods e não queira subir os pods pro repositório
+# Pods/
+# *.xcworkspace
+
+# Carthage
+Carthage/Build/
+# Carthage/Checkouts/
+
+# Fastlane (se for usar no futuro para automação)
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
