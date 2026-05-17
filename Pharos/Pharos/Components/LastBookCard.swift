@@ -42,6 +42,7 @@ struct LastBookCard: View {
                                         bookColor: book.coverColor
                                     )
                                     .padding(.top, 5)
+                                    .padding(.leading, 20)
                             }
                         }
                         .frame(height: 142)

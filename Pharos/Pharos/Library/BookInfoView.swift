@@ -55,14 +55,18 @@ struct BookInfoView: View {
                                 .font(.footnote)
                                 .foregroundStyle(Color(.secondaryLabel))
                         }
-
+                        
                         if let totalPages = book.numberOfPages {
-                            BookProgressBar(
+                            HStack(alignment: .center){
+                                BookProgressBar(
                                     currentPage: book.currentPage,
                                     totalPages: totalPages,
                                     bookColor: book.coverColor
                                 )
-                                .padding()
+                            }
+                            .frame(maxWidth: .infinity)
+                            .padding(.horizontal, 20)
+                            
                         }
 
                         NavigationLink {
@@ -105,7 +109,7 @@ struct BookInfoView: View {
                                         .font(.title3.weight(.semibold))
                                         .padding(.horizontal)
                                     
-                                        ForEach(book.notes, id: \.persistentModelID) { note in
+                                    ForEach(book.notes.sorted(using: KeyPathComparator(\.date, order: .reverse)), id: \.persistentModelID) { note in
                                         if note.modelContext != nil {
                                             
                                             NavigationLink(destination: NoteModal(receivedNote: note, book: book, isNewNote: false, isEditing: false).navigationTransition(.zoom(sourceID: note.id, in: namespace))){

@@ -36,7 +36,6 @@ struct BookProgressBar: View {
                         .fill(Color(bookColor).gradient)
                         .frame(width: geo.size.width * CGFloat(progress), height: 8)
                 }
-                .padding(.leading)
             }
             .frame(height: 8) 
             
@@ -46,9 +45,7 @@ struct BookProgressBar: View {
                 Text(percentageString)
                     .font(.caption2.bold())
                     .monospacedDigit()
-                    .padding(.leading)
             }
-            .padding(.leading)
             .font(.caption2)
             .foregroundStyle(.secondary)
         }
