@@ -37,10 +37,18 @@ struct HomeScreen: View {
     }
         
     var carouselBooks: [Book] {
-        if let lastBook = lastReadBook {
-            return allBooks.filter { $0 != lastBook }
+        let filteredBooks = if let lastBook = lastReadBook {
+            allBooks.filter { $0 != lastBook }
+        } else {
+            allBooks
         }
-        return allBooks
+        
+        return filteredBooks.sorted { book1, book2 in
+            let date1 = book1.lastSessionDate ?? book1.creationDate
+            let date2 = book2.lastSessionDate ?? book2.creationDate
+            
+            return date1 > date2 
+        }
     }
 
     

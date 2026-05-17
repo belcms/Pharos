@@ -17,6 +17,10 @@ class Book {
     public var currentPage: Int
     public var creationDate: Date
     
+    var lastSessionDate: Date? {
+        sessions.max(by: { $0.date < $1.date })?.date ?? creationDate
+    }
+    
 
     @Relationship(deleteRule: .cascade, inverse: \Session.book) var sessions: [Session]
     @Relationship(deleteRule: .cascade, inverse: \Note.book) var notes: [Note]
@@ -32,6 +36,9 @@ class Book {
         self.currentPage = currentPage
         self.creationDate = Date()
     }
+    
+    
+    
     
     
 }
