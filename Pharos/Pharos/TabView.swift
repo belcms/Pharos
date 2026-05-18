@@ -6,8 +6,10 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct AppTabView: View {
+    @Query(sort: \Book.creationDate, order: .reverse) private var books: [Book]
     
     var body: some View {
         
@@ -17,6 +19,9 @@ struct AppTabView: View {
                 }
                 Tab("My Bookshelf", systemImage: "books.vertical.fill"){
                     BookshelfView()
+                }
+                Tab(role: .search){
+                   SearchView(books: books)
                 }
             }
     }
