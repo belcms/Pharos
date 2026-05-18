@@ -91,7 +91,11 @@ struct PostSessionView : View {
                     
                     Button {
                         dismiss()
-                        dismissParent()
+//                        dismissParent()
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                                dismissParent()
+                            }
+                        
                     } label: {
                         Text("Close the book")
                             .font(.subheadline.bold())

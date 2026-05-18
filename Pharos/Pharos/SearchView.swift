@@ -50,10 +50,14 @@ struct SearchView: View {
                 AppBackground()
                 
                 if searchText.isEmpty {
-                    ContentUnavailableView("Search for your next read by name or author", systemImage: "book")
+                        ContentUnavailableView(
+                            "Search in Your Library",
+                            systemImage: "books.vertical.fill",
+                            description: Text("Find your book by title or author.")
+                        )
                 }
                 else if searchResults.isEmpty {
-                    ContentUnavailableView("No results found", systemImage: "book")
+                    ContentUnavailableView.search(text: searchText)
                 } else {
                     
                     ScrollView{
@@ -116,7 +120,7 @@ struct SearchView: View {
             .searchable(
                 text: $searchText,
                 placement: .navigationBarDrawer(displayMode: .automatic),
-                prompt: "type here to search"
+                prompt: "Search by title or author"
             )
 
 

@@ -102,10 +102,12 @@ struct HomeScreen: View {
                                             ForEach(carouselBooks) { book in
                                                 VStack(spacing: 8) {
                                                     
-                                                    NavigationLink(destination: SessionView(book: book)) {
+                                                    
+                                                    NavigationLink{
+                                                        SessionView(book: book)
+                                                    } label: {
                                                         BookCoverView(book: book)
-                                                    }
-                                                    .buttonStyle(.plain)
+                                                    }.buttonStyle(.plain)
                                                     
                                                     Text(book.title)
                                                         .font(.subheadline).fontWeight(.semibold)
