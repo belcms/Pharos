@@ -69,6 +69,7 @@ struct HomeScreen: View {
                         
                         if allBooks.isEmpty {
                             NoBookReadView()
+                                .padding(.top, 110)
                         } else {
                             if let lastBook = lastReadBook {
                                 LastBookCard(book: lastBook, path: $path)
@@ -175,6 +176,7 @@ struct NoBookReadView: View {
             Spacer()
         }
     }
+    
 }
 
 struct StatBox: View {

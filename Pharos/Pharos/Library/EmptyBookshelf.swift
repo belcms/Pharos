@@ -20,6 +20,7 @@ struct EmptyBookshelfView: View {
             Text("A new chapter awaits")
                 .font(.title3.bold())
                 .foregroundColor(.primary)
+                .fontDesign(.serif)
             
             Text("Tap the + to add your first book and begin your reading journey.")
                 .font(.subheadline)
