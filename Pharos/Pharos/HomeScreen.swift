@@ -93,6 +93,9 @@ struct HomeScreen: View {
                             }
                             
                             if !carouselBooks.isEmpty {
+                                if lastReadBook == nil{
+                                    NoStatView()
+                                }
                                 VStack(alignment: .leading, spacing: 16) {
                                     Text("Pick up your next read")
                                         .font(.title3.bold())
@@ -176,8 +179,37 @@ struct NoBookReadView: View {
             Spacer()
         }
     }
-    
 }
+
+struct NoStatView: View {
+    var body: some View {
+        VStack(spacing: 12) {
+            Spacer()
+            Image("CatAndBooks")
+                .resizable()
+                .scaledToFit()
+                .opacity(0.8)
+                .frame(width: 150)
+            
+            VStack(spacing: 8) {
+                Text("Your journey awaits")
+                    .font(.title3.bold())
+                    .fontDesign(.serif)
+                
+                Text("Open a book from your shelf and start your first reading session.")
+                    .font(.subheadline)
+                    .foregroundStyle(.secondary)
+            }
+            .multilineTextAlignment(.center)
+            .padding(.horizontal)
+            
+            Spacer()
+            Spacer()
+        }
+    }
+}
+
+
 
 struct StatBox: View {
     let title: String
